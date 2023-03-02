@@ -2,10 +2,11 @@ class Game {
   constructor() {
     this.playerOne = new Player(1, "😺")
     this.playerTwo = new Player(2, "🐕")
-    this.currentPlayerTurn = 1 || 2
-    this.gameData = []
     this.draw = false
+    this.winner = false
     this.turns = 0
+    this.defaultPlayer = "😺"
+    this.currentPlayerTurn = "😺"
   }
   checkBoard() {
     var winConditions = [
@@ -30,7 +31,11 @@ class Game {
   }
 
   changeTurn() {
-
+    if (this.currentPlayerTurn === "😺") {
+      this.currentPlayerTurn = "🐕"
+    } else {
+      this.currentPlayerTurn = "😺"
+    }
   }
   
   clearBoard() {
