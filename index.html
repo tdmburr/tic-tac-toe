@@ -10,27 +10,29 @@
 </head>
 <body>
   <aside class="player-one">
-    <h1>Player One *token*</h1>
+    <h1>Player One 😺</h1>
     <p>Wins: *</p>
-
   </aside>
   <main class="game-container">
-    <h1>It's *blanks* turn!</h1>
+    <h1 class="game-board-header">Tic Tac Toe (display player turn here)</h1>
     <div class="game-board">
-      <div class="box">Box 1</div>
-      <div class="box">Box 2</div>
-      <div class="box">Box 3</div>
-      <div class="box">Box 4</div>
-      <div class="box">Box 5</div>
-      <div class="box">Box 6</div>
-      <div class="box">Box 7</div>
-      <div class="box">Box 8</div>
-      <div class="box">Box 9</div>
+      <div class="box" id="boxOne">Box 1</div>
+      <div class="box" id="boxTwo">Box 2</div>
+      <div class="box" id="boxThree">Box 3</div>
+      <div class="box" id="boxFour">Box 4</div>
+      <div class="box" id="boxFive">Box 5</div>
+      <div class="box" id="boxSix">Box 6</div>
+      <div class="box" id="boxSeven">Box 7</div>
+      <div class="box" id="boxEight">Box 8</div>
+      <div class="box" id="boxNine">Box 9</div>
     </div>
   </main>
   <aside class="player-two">
-    <h1>Player Two *token*</h1>
+    <h1>Player Two 🐕</h1>
     <p>Wins: *</p>
-  </aside>  
+  </aside>
+  <script type="text/javascript" src="./src/game.js"></script>
+  <script type="text/javascript" src="./src/player.js"></script>
+  <script type="text/javascript" src="./src/main.js"></script>  
 </body>
 </html>
