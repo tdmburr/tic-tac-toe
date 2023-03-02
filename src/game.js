@@ -57,6 +57,7 @@ class Game {
   }
   
   clearBoard() {
+    this.boxID = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     this.draw = false
     this.winner = false
     this.turns = 0
