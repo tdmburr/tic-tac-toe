@@ -8,6 +8,7 @@ class Game {
     this.turns = 0
     this.startPlayer = "😺"
     this.currentPlayerTurn = "😺"
+    this.gameInSession = true
   }
   checkBoard() {
     var winConditions = [
@@ -27,6 +28,7 @@ class Game {
       {
           this.winner = true;
           this.playerOne.wins ++
+          this.gameInSession = false;
       } else if (
           this.playerTwo.boardSpace.includes(winConditions[i][0]) && 
           this.playerTwo.boardSpace.includes(winConditions[i][1]) && 
@@ -34,6 +36,7 @@ class Game {
       {
           this.winner = true;
           this.playerOne.wins ++
+          this.gameInSession = false;
       }
     }
   }
@@ -61,6 +64,7 @@ class Game {
     this.draw = false
     this.winner = false
     this.turns = 0
+    this.gameInSession = true
     this.playerOne.boardSpace = []
     this.playerTwo.boardSpace = []
     if (this.startPlayer === "😺") {
