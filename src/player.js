@@ -6,6 +6,6 @@ class Player {
     this.boardSpace = []
   }
   increaseWins() {
-    this.wins ++
+    this.wins += 1
   }
 }
