@@ -26,3 +26,13 @@ function initiatePlay(event) {
   } 
 }
 
+function showResult() {
+  if (newGame.draw) {
+    gameTurn.innerText = "It's a draw!"
+  } else {
+    gameTurn.innerText = `${newGame.winner.token} wins!`
+    playerOneWins.innerHTML = `Wins: ${newGame.playerOne.wins}`
+    playerTwoWins.innerHTML = `Wins: ${newGame.playerTwo.wins}`
+  }
+  setTimeout(resetBoard, 3000)
+}
