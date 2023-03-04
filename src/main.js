@@ -36,3 +36,10 @@ function showResult() {
   }
   setTimeout(resetBoard, 3000)
 }
+
+function resetBoard() {
+  var boxes = document.querySelectorAll('.box')
+  boxes.forEach(box => box.innerHTML = '')  
+  newGame.clearBoard()
+  displayTurn()
+}
