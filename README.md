@@ -9,6 +9,7 @@ I created the game of Tic-Tac-Toe with an ocean theme. This game will allow a us
 
 
 ### Preview of App:
+![Tic Tac Toe](https://user-images.githubusercontent.com/109426263/223183135-6768bdbb-d9d6-4b76-8a96-7f38095c6dce.gif)
 
 
 ### Context:
